@@ -25,7 +25,7 @@ const Contents: React.FC = () => {
 
   return (
     <div className="w-full h-screen bg-[#7510F7] px-[10rem] text-9xl">
-      <div className="absolute top-1/3 font-bold text-white">
+      <div className="absolute top-[20%] font-bold text-white">
         <motion.div
           whileHover={{ scale: 1.1, color: "blue" }}
           initial="initial"

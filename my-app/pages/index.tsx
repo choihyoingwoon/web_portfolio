@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import computer from "../public/images/hero-devices.png";
 import man from "../public/images/mf-avatar.svg";
+import "animate.css";
 
 const variants = {
   initial: { opacity: 0, y: 50 },
@@ -80,19 +81,16 @@ const HomePage: React.FC = () => {
                 : "rgb(117, 16, 247)",
             }}
             transition={{ duration: 2 }}
-            className="rounded-full w-[218.42px] h-[218.42px]"
+            className="rounded-full w-[163.82px] h-[163.82px] mt-16"
           >
-            {isClicked && (
-              <div className="w-10 h-10 bg-[#7510F7] rounded-full" />
-            )}
             {!isClicked && (
               <>
                 <Image
                   src={man}
                   alt="man"
-                  width={200}
+                  width={150}
                   height={100}
-                  className="m-auto"
+                  className="m-auto animate__animated animate__bounce animate__delay-3s animate__slow animate__infinite"
                 />
                 <div className="text-4xl text-red-500 font-bold absolute bottom-10 w-full text-center">
                   Click
