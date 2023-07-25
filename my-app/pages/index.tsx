@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
         animate="animate"
         variants={variants}
         transition={{ duration: 1 }}
-        className="text-center text-5xl font-bold"
+        className="text-center text-[2.5vw] font-bold"
       >
         Frontend Developer
       </motion.div>
@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
         animate="animate"
         variants={variants}
         transition={{ duration: 1, delay: 0.6 }}
-        className="text-3xl text-center mt-2 text-gray-500"
+        className="text-[1.5vw] text-center text-gray-500"
       >
         개발이 재미있는 개발자
       </motion.div>
@@ -44,7 +44,7 @@ const HomePage: React.FC = () => {
         animate="animate"
         variants={variants}
         transition={{ duration: 1, delay: 1.2 }}
-        className="mt-4 text-5xl"
+        className="mt-2 text-[2vw]"
       >
         <span className="w-fit items-baseline flex m-auto">
           <motion.div
@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
             transition={{ duration: 1, delay: 1.4 }}
             className="mx-4"
           >
-            <span className="text-[#7510F7] text-6xl font-semibold">
+            <span className="text-[#7510F7] text-[3vw] font-semibold">
               최형운
             </span>
           </motion.div>
@@ -68,7 +68,7 @@ const HomePage: React.FC = () => {
         transition={{ duration: 1, delay: 2.3 }}
         className="mx-4"
       >
-        <div className="relative w-fit m-auto mt-4" onClick={changePage}>
+        <div className="relative w-fit m-auto" onClick={changePage}>
           <motion.div
             initial={{
               scale: 1,
@@ -81,7 +81,7 @@ const HomePage: React.FC = () => {
                 : "rgb(117, 16, 247)",
             }}
             transition={{ duration: 2 }}
-            className="rounded-full w-[163.82px] h-[163.82px] mt-16"
+            className="rounded-full w-[163.82px] h-[163.82px] mt-[5vh]"
           >
             {!isClicked && (
               <>

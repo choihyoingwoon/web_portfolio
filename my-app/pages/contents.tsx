@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import computer from "../public/images/hero-devices.png";
+import { BiArrowBack } from "react-icons/bi";
 
 const variants = {
   initial: { opacity: 0, y: 50 },
@@ -16,17 +17,35 @@ const Contents: React.FC = () => {
   const [showProject, setShowProject] = useState(false);
   const goToAbout = () => {
     setShowAbout(true);
-    router.push("/about");
+    setTimeout(() => {
+      router.push("/about");
+    }, 500);
   };
   const goToProject = () => {
     setShowProject(true);
-    router.push("/project");
+    setTimeout(() => {
+      router.push("/project");
+    }, 500);
+  };
+  const goToBack = () => {
+    router.back();
   };
 
   return (
-    <div className="w-full h-screen bg-[#7510F7] px-[10rem] text-9xl">
+    <div className="w-full h-screen bg-[#7510F7] px-[10rem] text-[6vw]">
+      <motion.button
+        initial="initial"
+        animate="animate"
+        variants={variants}
+        transition={{ duration: 1 }}
+        className="absolute left-10 top-[3vh] flex items-center text-[1vw] text-white font-bold"
+        onClick={goToBack}
+      >
+        <BiArrowBack size={30} />
+        <p className="ml-2">back</p>
+      </motion.button>
       <div className="absolute top-[20%] font-bold text-white">
-        <motion.div
+        <motion.button
           whileHover={{ scale: 1.1, color: "blue" }}
           initial="initial"
           animate="animate"
@@ -40,8 +59,9 @@ const Contents: React.FC = () => {
           <motion.div whileHover={{ scale: 1.1, color: "rgb(91, 233, 185)" }}>
             About
           </motion.div>
-        </motion.div>
-        <motion.div
+        </motion.button>
+        <br />
+        <motion.button
           initial="initial"
           animate="animate"
           variants={variants}
@@ -54,7 +74,7 @@ const Contents: React.FC = () => {
           <motion.div whileHover={{ scale: 1.1, color: "rgb(91, 233, 185)" }}>
             Project
           </motion.div>
-        </motion.div>
+        </motion.button>
       </div>
       <div className="absolute bottom-0 right-0 w-1/2">
         <Image src={computer} alt="computer" layout="responsive" />
