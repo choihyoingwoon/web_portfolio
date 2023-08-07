@@ -32,7 +32,7 @@ const Contents: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen bg-[#7510F7] px-[10rem] text-[6vw]">
+    <div className="w-full h-screen bg-[#7510F7] px-[10rem] text-[6vw] overflow-x-hidden overflow-y-hidden">
       <motion.button
         initial="initial"
         animate="animate"

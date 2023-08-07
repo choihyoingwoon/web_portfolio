@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
     }, 300);
   };
   return (
-    <div className="py-10 h-screen w-full bg-white">
+    <div className="py-10 h-screen w-full bg-white overflow-x-hidden overflow-y-hidden">
       <motion.div
         initial="initial"
         animate="animate"
@@ -81,7 +81,7 @@ const HomePage: React.FC = () => {
                 : "rgb(117, 16, 247)",
             }}
             transition={{ duration: 2 }}
-            className="rounded-full w-[163.82px] h-[163.82px] mt-[5vh]"
+            className="rounded-full w-[163.82px] h-[163.82px] mt-[5vh] "
           >
             {!isClicked && (
               <>

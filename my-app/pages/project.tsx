@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { BiArrowBack } from "react-icons/bi";
 import Image from "next/image";
@@ -33,6 +33,9 @@ const Project: React.FC = () => {
   const handleMouseLeave = () => {
     setShowDescription(null);
   };
+  const goToDetail = () => {
+    router.push("/detail");
+  };
   return (
     <div className="w-full h-screen bg-[#7510F7]">
       <motion.button
@@ -62,8 +65,9 @@ const Project: React.FC = () => {
           variants={dropVariants}
           transition={{ duration: 1, delay: 0.3 }}
           className="relative rounded-xl w-[25vw] h-[30vh] cursor-pointer"
-          onMouseEnter={() => handleMouseEnter("seeyouagain")}
+          onMouseEnter={() => handleMouseEnter("SeeYouAgain")}
           onMouseLeave={handleMouseLeave}
+          onClick={goToDetail}
         >
           <Image
             src={seeyouagain}
@@ -72,7 +76,7 @@ const Project: React.FC = () => {
             className="rounded-xl"
           />
           {/* 이미지에 마우스를 올렸을 때 설명을 표시하는 컴포넌트 */}
-          {showDescription === "seeyouagain" && (
+          {showDescription === "SeeYouAgain" && (
             <motion.div
               initial={{ y: 0, filter: "blur(3px)" }}
               animate={{ y: 0, filter: "blur(0px)" }}
@@ -97,8 +101,9 @@ const Project: React.FC = () => {
           variants={dropVariants}
           transition={{ duration: 1, delay: 0.6 }}
           className="relative rounded-xl w-[25vw] h-[30vh] cursor-pointer"
-          onMouseEnter={() => handleMouseEnter("devday")}
+          onMouseEnter={() => handleMouseEnter("DevDay")}
           onMouseLeave={handleMouseLeave}
+          onClick={goToDetail}
         >
           <Image
             src={devday}
@@ -107,7 +112,7 @@ const Project: React.FC = () => {
             className="rounded-xl"
           />
           {/* 이미지에 마우스를 올렸을 때 설명을 표시하는 컴포넌트 */}
-          {showDescription === "devday" && (
+          {showDescription === "DevDay" && (
             <motion.div
               initial={{ y: 0, filter: "blur(3px)" }}
               animate={{ y: 0, filter: "blur(0px)" }}
@@ -131,8 +136,9 @@ const Project: React.FC = () => {
           variants={dropVariants}
           transition={{ duration: 1, delay: 0.9 }}
           className="relative rounded-xl w-[25vw] h-[30vh] cursor-pointer"
-          onMouseEnter={() => handleMouseEnter("singsingtime")}
+          onMouseEnter={() => handleMouseEnter("SingSingTime")}
           onMouseLeave={handleMouseLeave}
+          onClick={goToDetail}
         >
           <Image
             src={singsingtime}
@@ -141,7 +147,7 @@ const Project: React.FC = () => {
             className="rounded-xl"
           />
           {/* 이미지에 마우스를 올렸을 때 설명을 표시하는 컴포넌트 */}
-          {showDescription === "singsingtime" && (
+          {showDescription === "SingSingTime" && (
             <motion.div
               initial={{ y: 0, filter: "blur(3px)" }}
               animate={{ y: 0, filter: "blur(0px)" }}
@@ -165,12 +171,13 @@ const Project: React.FC = () => {
           variants={dropVariants}
           transition={{ duration: 1, delay: 1.2 }}
           className="relative rounded-xl w-[25vw] h-[30vh] cursor-pointer"
-          onMouseEnter={() => handleMouseEnter("pjt")}
+          onMouseEnter={() => handleMouseEnter("PJT")}
           onMouseLeave={handleMouseLeave}
+          onClick={goToDetail}
         >
           <Image src={pjt} alt="pjt" layout="fill" className="rounded-xl" />
           {/* 이미지에 마우스를 올렸을 때 설명을 표시하는 컴포넌트 */}
-          {showDescription === "pjt" && (
+          {showDescription === "PJT" && (
             <motion.div
               initial={{ y: 0, filter: "blur(3px)" }}
               animate={{ y: 0, filter: "blur(0px)" }}

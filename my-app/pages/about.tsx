@@ -22,7 +22,7 @@ const About: React.FC = () => {
   };
   const [isClicked, toggleClicked] = useCycle(false, true);
   return (
-    <>
+    <div className="overflow-x-hidden overflow-y-hidden">
       <motion.div
         initial={{
           scale: 1,
@@ -195,7 +195,7 @@ const About: React.FC = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
