@@ -1,0 +1,10 @@
+.fadeUp {
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 2000ms, transform 2000ms;
+}
+
+.fadeUpVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
