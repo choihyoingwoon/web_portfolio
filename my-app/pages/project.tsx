@@ -19,6 +19,7 @@ const dropVariants = {
 
 const Project: React.FC = () => {
   const router = useRouter();
+
   const goToBack = () => {
     router.back();
   };
@@ -34,7 +35,16 @@ const Project: React.FC = () => {
     setShowDescription(null);
   };
   const goToDetail = () => {
-    router.push("/detail");
+    const list: Record<string, number> = {
+      SeeYouAgain: 0,
+      DevDay: 1,
+      SingSingTime: 2,
+      PJT: 3,
+    };
+    if (showDescription) {
+      sessionStorage.setItem("see", String(list[showDescription]));
+      router.push("/detail");
+    }
   };
   return (
     <div className="w-full h-screen bg-[#7510F7]">

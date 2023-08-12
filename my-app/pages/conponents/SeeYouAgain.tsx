@@ -118,7 +118,7 @@ const SeeYouAgain: React.FC = () => {
             </div>
             <div className="text-[1.2vw] flex items-center mb-6">
               <p className="mr-6 font-semibold">개발기간</p>
-              <p>2023.04.10~2023.0519</p>
+              <p>2023.04.10~2023.05.19</p>
             </div>
             <div className="text-[1.2vw] flex items-center mb-6">
               <p className="mr-6 font-semibold">개발인원</p>
@@ -188,16 +188,15 @@ const SeeYouAgain: React.FC = () => {
             <div className=" mb-12">
               <p className="text-[1.5vw] font-semibold">4. 느끼고 배운 점</p>
               <div className="text-[1.2vw] break-keep	">
-                계획의 중요성을 알게 되었습니다. 주어진 기간에 맞게 계획을 잘
+                1) 계획의 중요성을 알게 되었습니다. 주어진 기간에 맞게 계획을 잘
                 세우고 일정 관리를 잘 해야 결과물이 안정적으로 나온다고
                 느꼈습니다.
-                <br/>
-                웹과 앱을 모두 만들면서 반응형의 중요성을 다시 한번
-                생각하게 되었습니다.
                 <br />
-                데이터를 사용해야 될 때 페이지의 쾌적함을
-                위해 좀 더 빠르게 처리하여 띄울 방법을 고민하며 코드를 짜야
-                한다고 느꼈습니다.
+                2) 웹과 앱을 모두 만들면서 반응형의 중요성을 다시 한번 생각하게
+                되었습니다.
+                <br />
+                3) 데이터를 사용해야 될 때 페이지의 쾌적함을 위해 좀 더 빠르게
+                처리하여 띄울 방법을 고민하며 코드를 짜야 한다고 느꼈습니다.
               </div>
             </div>
           </div>
