@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import me from "../public/images/me2.jpg";
-import react from "../public/images/react.png";
-import vue from "../public/images/vue.png";
-import js from "../public/images/js.png";
-import ts from "../public/images/ts.png";
-import css from "../public/images/css.png";
-import python from "../public/images/python.png";
-import StarRating from "./conponents/starRating";
+import me from "../../public/images/me2.jpg";
+import react from "../../public/images/react.png";
+import vue from "../../public/images/vue.png";
+import js from "../../public/images/js.png";
+import ts from "../../public/images/ts.png";
+import css from "../../public/images/css.png";
+import python from "../../public/images/python.png";
+import StarRating from "../conponents/starRating";
 import { BiArrowBack } from "react-icons/bi";
 import { useRouter } from "next/navigation";
 import { motion, useCycle } from "framer-motion";
@@ -36,7 +36,7 @@ const About: React.FC = () => {
         }}
         transition={{ duration: 2 }}
       >
-        <div className="relative w-full h-[10vh] bg-[#7510F7] flex justify-center items-center text-[1.5vw] text-white font-bold">
+        <div className="relative w-full h-[10vh] bg-[#7510F7] flex justify-center items-center text-[1vw] text-white font-bold">
           {!isClicked && (
             <p className="animate__animated animate__bounce animate__slow animate__infinite">
               안녕하세요. 저는 개발이 재미 있는 개발자 최형운 입니다.

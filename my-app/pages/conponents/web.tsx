@@ -20,7 +20,7 @@ const Web: React.FC = () => {
     }, 300);
   };
   return (
-    <div className="py-10 h-screen w-full bg-white overflow-x-hidden overflow-y-hidden">
+    <div className="py-10 h-screen w-full bg-white overflow-x-hidden overflow-y-hidden text-black">
       <motion.div
         initial="initial"
         animate="animate"

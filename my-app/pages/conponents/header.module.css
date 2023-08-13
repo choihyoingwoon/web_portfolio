@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+  padding-right:20px;
+  text-align: center;
+}
+
+.menuBtn {
+  cursor: pointer;
+}
+
+.nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+}
+
+.nav.open {
+  max-height: 50vh; /* 필요하다면 이 값을 조절하여 아래로 펼쳐지는 영역의 최대 높이를 설정. */
+}

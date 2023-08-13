@@ -1,0 +1,67 @@
+import React, { useState } from "react";
+import styles from "./header.module.css";
+import classNames from "classnames";
+import Link from "next/link";
+import { AiOutlineHome } from "react-icons/ai";
+import { BsPerson } from "react-icons/bs";
+import { AiOutlineProject } from "react-icons/ai";
+
+const MobileHeader: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <header
+      className={classNames(
+        styles.header,
+        "fixed top-0 bg-[#7510F7] text-white py-[10px]"
+      )}
+    >
+      <div
+        className={classNames(styles.menuBtn, "text-right text-[6vw]")}
+        onClick={toggleMenu}
+      >
+        &#9776;
+        <p className="fixed top-2.5 w-full text-center">최형운의 Port</p>
+      </div>
+      <nav
+        className={classNames(
+          `${styles.nav} ${isOpen ? styles.open : ""}`,
+          "bg-[#7510F7] text-[6vw]"
+        )}
+      >
+        <ul className="p-4">
+          <li className="mb-4 ">
+            <Link href="/" className="w-1/3 flex m-auto items-center">
+              <AiOutlineHome />
+              <p className="ml-2">Home</p>
+            </Link>
+          </li>
+          <li className="mb-4">
+            <Link
+              href="/mobile/about"
+              className="w-1/3 flex m-auto items-center"
+            >
+              <BsPerson />
+              <p className="ml-2">About</p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/mobile/project"
+              className="w-1/3 flex m-auto items-center"
+            >
+              <AiOutlineProject />
+              <p className="ml-2">Project</p>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default MobileHeader;
