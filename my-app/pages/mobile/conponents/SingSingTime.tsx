@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from "react";
 
-import useInView from "../useInView";
+import useInView from "./useInView";
 import classNames from "classnames";
 import styles from "./Web.module.scss";
 import Image from "next/image";
-import js from "@/public/images/js.png";
-import vue from "@/public/images/vue.png";
+import js from "../../../public/images/js.png";
+import vue from "../../../public/images/vue.png";
 
 const SingSingTime: React.FC = () => {
   const [ref, isInView] = useInView(0.8);

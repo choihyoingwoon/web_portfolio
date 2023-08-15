@@ -1,15 +1,17 @@
 import React, { useRef, useEffect } from "react";
 
-import useInView from "../useInView";
+import useInView from "./useInView";
 import classNames from "classnames";
 import styles from "./Web.module.scss";
 import Image from "next/image";
-import js from "@/public/images/js.png";
-import rea from "@/public/images/react.png";
-import next from "@/public/images/next.png";
-import dd3 from "@/public/images/dd3.png";
-import dd4 from "@/public/images/dd4.png";
-import dd5 from "@/public/images/dd5.png";
+import js from "../../../public/images/js.png";
+import rea from "../../../public/images/react.png";
+import next from "../../../public/images/next.png";
+import dd1 from "../../../public/images/dd1.png";
+import dd2 from "../../../public/images/dd2.png";
+import dd3 from "../../../public/images/dd3.png";
+import dd4 from "../../../public/images/dd4.png";
+import dd5 from "../../../public/images/dd5.png";
 
 const DevDay: React.FC = () => {
   const [ref, isInView] = useInView(0.8);

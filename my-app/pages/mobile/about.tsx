@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import me from "@/public/images/me1.png";
-import react from "@/public/images/react.png";
-import vue from "@/public/images/vue.png";
-import js from "@/public/images/js.png";
-import ts from "@/public/images/ts.png";
-import css from "@/public/images/css.png";
-import python from "@/public/images/python.png";
-import StarRating from "@/src/conponents/starRating";
-import Footer from "@/src/conponents/mobile/naviBar";
+import me from "../../public/images/me1.png";
+import react from "../../public/images/react.png";
+import vue from "../../public/images/vue.png";
+import js from "../../public/images/js.png";
+import ts from "../../public/images/ts.png";
+import css from "../../public/images/css.png";
+import python from "../../public/images/python.png";
+import StarRating from "../conponents/starRating";
+import Footer from "../conponents/naviBar";
 
 const About: React.FC = () => {
   return (

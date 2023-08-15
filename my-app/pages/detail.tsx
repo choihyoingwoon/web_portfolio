@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from "react";
 import AwesomeSlider from "react-awesome-slider";
-import SeeYouAgain from "@/src/conponents/mobile/SeeYouAgain";
-import DevDay from "@/src/conponents/mobile/DevDay";
-import SingSingTime from "@/src/conponents/mobile/SingSingTime";
-import PJT from "@/src/conponents/mobile/PJT";
+import SeeYouAgain from "./conponents/SeeYouAgain";
+import DevDay from "./conponents/DevDay";
+import SingSingTime from "./conponents/SingSingTime";
+import PJT from "./conponents/PJT";
 import classNames from "classnames";
-import Footer from "@/src/conponents/mobile/naviBar";
 
 const Detail: React.FC = () => {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const storedValue = sessionStorage.getItem("see");
-      if (storedValue !== null) {
-        setNumber(parseInt(storedValue, 10));
-      }
-    }
-  }, []);
-  const [number, setNumber] = useState<number>(0);
+  const [number, setNumber] = useState<number>(
+    parseInt(sessionStorage.getItem("see") || "0")
+  );
+  const list: Record<string, number> = {
+    SeeYouAgain: 0,
+    DevDay: 1,
+    SingSingTime: 2,
+    PJT: 3,
+  };
   const handleSlideChange = (info: { currentIndex: number }) => {
     setNumber(info.currentIndex);
     sessionStorage.setItem("see", String(info.currentIndex));
@@ -29,26 +28,7 @@ const Detail: React.FC = () => {
 
   return (
     <div className="w-full text-black">
-      <AwesomeSlider
-        className="h-[86vh]"
-        selected={number}
-        bullets={false}
-        onTransitionEnd={handleSlideChange}
-      >
-        <div className="w-[90%] h-full py-4">
-          <SeeYouAgain />
-        </div>
-        <div className="w-[90%] h-full py-4">
-          <DevDay />
-        </div>
-        <div className="w-[90%] h-full py-4">
-          <SingSingTime />
-        </div>
-        <div className="w-[90%] h-full py-4">
-          <PJT />
-        </div>
-      </AwesomeSlider>
-      <div className="flex text-[3vw] h-[7vh] bg-[#2f2f2f] text-white text-center px-4">
+      <div className="flex text-[1.5vw] bg-[#2f2f2f] text-white text-center px-8 h-fit pt-8">
         <button
           onClick={() => projectClick(0)}
           className={classNames(
@@ -83,11 +63,27 @@ const Detail: React.FC = () => {
             number == 3 ? "text-[#5be9b9] font-semibold" : "text-white"
           )}
         >
-          SSAFY <br />
-          관통프로젝트
+          SSAFY 관통프로젝트
         </button>
       </div>
-      <Footer />
+      <AwesomeSlider
+        className="h-[85vh]"
+        selected={number}
+        onTransitionEnd={handleSlideChange}
+      >
+        <div className="w-[80%] h-full py-8">
+          <SeeYouAgain />
+        </div>
+        <div className="w-[80%] h-full py-8">
+          <DevDay />
+        </div>
+        <div className="w-[80%] h-full py-8">
+          <SingSingTime />
+        </div>
+        <div className="w-[80%] h-full py-8">
+          <PJT />
+        </div>
+      </AwesomeSlider>
     </div>
   );
 };

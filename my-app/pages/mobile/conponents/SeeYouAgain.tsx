@@ -1,16 +1,16 @@
 import React, { useRef, useEffect } from "react";
 
-import useInView from "../useInView";
+import useInView from "./useInView";
 import classNames from "classnames";
 import styles from "./Web.module.scss";
 import Image from "next/image";
-import ts from "@/public/images/ts.png";
-import rea from "@/public/images/react.png";
-import next from "@/public/images/next.png";
-import pwa from "@/public/images/pwa.png";
-import sya1 from "@/public/images/sya1.png";
-import sya2 from "@/public/images/sya2.png";
-import sya3 from "@/public/images/sya3.png";
+import ts from "../../../public/images/ts.png";
+import rea from "../../../public/images/react.png";
+import next from "../../../public/images/next.png";
+import pwa from "../../../public/images/pwa.png";
+import sya1 from "../../../public/images/sya1.png";
+import sya2 from "../../../public/images/sya2.png";
+import sya3 from "../../../public/images/sya3.png";
 
 const SeeYouAgain: React.FC = () => {
   const [ref, isInView] = useInView(0.9);

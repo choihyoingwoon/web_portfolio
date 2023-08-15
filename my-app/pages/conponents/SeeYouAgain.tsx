@@ -4,16 +4,16 @@ import useInView from "./useInView";
 import classNames from "classnames";
 import styles from "./Web.module.scss";
 import Image from "next/image";
-import seeyouagain from "@/public/images/seeyouagain.png";
-import ts from "@/public/images/ts.png";
-import rea from "@/public/images/react.png";
-import next from "@/public/images/next.png";
-import pwa from "@/public/images/pwa.png";
-import sya1 from "@/public/images/sya1.png";
-import sya2 from "@/public/images/sya2.png";
-import sya3 from "@/public/images/sya3.png";
-import sya4 from "@/public/images/sya4.png";
-import sya5 from "@/public/images/sya5.png";
+import seeyouagain from "../../public/images/seeyouagain.png";
+import ts from "../../public/images/ts.png";
+import rea from "../../public/images/react.png";
+import next from "../../public/images/next.png";
+import pwa from "../../public/images/pwa.png";
+import sya1 from "../../public/images/sya1.png";
+import sya2 from "../../public/images/sya2.png";
+import sya3 from "../../public/images/sya3.png";
+import sya4 from "../../public/images/sya4.png";
+import sya5 from "../../public/images/sya5.png";
 
 const SeeYouAgain: React.FC = () => {
   const code = `

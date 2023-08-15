@@ -3,8 +3,8 @@ import "animate.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import me from "@/public/images/me-mobile.png";
-import Footer from "@/src/conponents/mobile/naviBar";
+import me from "../../public/images/me-mobile.png";
+import Footer from "../conponents/naviBar";
 
 const variants = {
   initial: { opacity: 0, y: 50 },
