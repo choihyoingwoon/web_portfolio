@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useWindowSize } from "../pages/conponents/hooks/useWindowSize";
+import { useWindowSize } from "../hooks/useWindowSize";
 import Web from "../pages/conponents/web";
 import Mobile from "../pages/conponents/mobile";
 const HomePage: React.FC = () => {

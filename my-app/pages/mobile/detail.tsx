@@ -9,7 +9,9 @@ import Footer from "../conponents/naviBar";
 
 const Detail: React.FC = () => {
   const [number, setNumber] = useState<number>(
-    parseInt(sessionStorage.getItem("see") || "0")
+    typeof window !== "undefined"
+      ? parseInt(sessionStorage.getItem("see") || "0")
+      : 0
   );
   const list: Record<string, number> = {
     SeeYouAgain: 0,

@@ -7,26 +7,29 @@ export default function useInView(
   const [isInView, setIsInView] = useState(false);
   const ref = useRef<IntersectionObserver | null>(null);
 
-  const setRef = useCallback((node: HTMLElement | null) => {
-    if (ref.current) {
-      ref.current.disconnect();
-    }
-
-    if (node) {
-      ref.current = new IntersectionObserver(
-        ([entry]) => {
-          setIsInView(entry.isIntersecting);
-        },
-        {
-          threshold,
-        }
-      );
-
+  const setRef = useCallback(
+    (node: HTMLElement | null) => {
       if (ref.current) {
-        ref.current.observe(node);
+        ref.current.disconnect();
       }
-    }
-  }, []);
+
+      if (node) {
+        ref.current = new IntersectionObserver(
+          ([entry]) => {
+            setIsInView(entry.isIntersecting);
+          },
+          {
+            threshold,
+          }
+        );
+
+        if (ref.current) {
+          ref.current.observe(node);
+        }
+      }
+    },
+    [threshold]
+  );
 
   return [setRef, isInView];
 }
