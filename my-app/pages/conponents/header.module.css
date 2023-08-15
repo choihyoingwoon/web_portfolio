@@ -1,11 +1,7 @@
-.header {
-  position: relative;
-  padding-right:20px;
-  text-align: center;
-}
 
 .menuBtn {
   cursor: pointer;
+  position: relative;
 }
 
 .nav {

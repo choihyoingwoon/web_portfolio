@@ -15,17 +15,16 @@ const MobileHeader: React.FC = () => {
 
   return (
     <header
-      className={classNames(
-        styles.header,
-        "fixed top-0 bg-[#7510F7] text-white py-[10px]"
-      )}
+      className={classNames("fixed z-50 w-full top-0 bg-[#7510F7] text-white py-[10px]")}
     >
       <div
-        className={classNames(styles.menuBtn, "text-right text-[6vw]")}
+        className={classNames(styles.menuBtn, "text-right text-[6vw] pr-[3vw]")}
         onClick={toggleMenu}
       >
-        &#9776;
-        <p className="fixed top-2.5 w-full text-center">최형운의 Port</p>
+        <div>&#9776;</div>
+        {/*<div className="absolute top-0 w-full text-center">
+          최형운의 Portfolio
+      </div>*/}
       </div>
       <nav
         className={classNames(

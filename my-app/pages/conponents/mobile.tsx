@@ -2,9 +2,9 @@ import { motion, useCycle } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import computer from "../../public/images/hero-devices-mobile.png";
-import man from "../../public/images/mf-avatar.svg";
+import man from "../../public/images/me1.png";
 import "animate.css";
-import Header from './mobileHeader'
+import Header from "./mobileHeader";
 
 const variants = {
   initial: { opacity: 0, y: 50 },
@@ -28,7 +28,7 @@ const Mobile: React.FC = () => {
         animate="animate"
         variants={variants}
         transition={{ duration: 1 }}
-        className="text-center text-[9vw] font-bold"
+        className="text-center text-[9vw] font-bold mt-16"
       >
         Frontend Developer
       </motion.div>
@@ -90,9 +90,7 @@ const Mobile: React.FC = () => {
                 <Image
                   src={man}
                   alt="man"
-                  width={150}
-                  height={100}
-                  className="m-auto animate__animated animate__bounce animate__delay-3s animate__slow animate__infinite"
+                  className="w-full h-full m-auto animate__animated animate__bounce animate__delay-3s animate__slow animate__infinite rounded-full"
                 />
                 <div className="text-4xl text-red-500 font-bold absolute bottom-10 w-full text-center">
                   Click
@@ -103,7 +101,7 @@ const Mobile: React.FC = () => {
         </div>
       </motion.div>
       {!isClicked && (
-        <div className="w-full m-auto pt-4">
+        <div className="absolute w-full m-auto bottom-0">
           <Image src={computer} alt="computer" layout="responsive" />
         </div>
       )}
