@@ -21,7 +21,7 @@ module.exports = {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/seeyouagain.c3e8c30c.png","height":1080,"width":1920,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAIAAAD38zoCAAAAiElEQVR42gF9AIL/AFpg/21j/4Fl/pRn/6Rg/LVd+8hd+uBn/gCKiP6Og/6Zgv+iefzEuOTWzOPYzOTRlewAt7H+rJT5tZf5u5b8wcHJ0djCyNDD3tzqAIth/pZs/qV2/61x/KmJyLeax7CSvObb5ACibf+la/+sav+4bP7EZ//RXv/ia//rfPXkPlb0Q2TxkgAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":5});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/web_portfolio/_next/static/media/seeyouagain.c3e8c30c.png","height":1080,"width":1920,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFCAIAAAD38zoCAAAAiElEQVR42gF9AIL/AFpg/21j/4Fl/pRn/6Rg/LVd+8hd+uBn/gCKiP6Og/6Zgv+iefzEuOTWzOPYzOTRlewAt7H+rJT5tZf5u5b8wcHJ0djCyNDD3tzqAIth/pZs/qV2/61x/KmJyLeax7CSvObb5ACibf+la/+sav+4bP7EZ//RXv/ia//rfPXkPlb0Q2TxkgAAAABJRU5ErkJggg==","blurWidth":8,"blurHeight":5});
 
 /***/ }),
 
@@ -69,9 +69,9 @@ var sya2 = __webpack_require__(504);
 // EXTERNAL MODULE: ./public/images/sya3.png
 var sya3 = __webpack_require__(4874);
 ;// CONCATENATED MODULE: ./public/images/sya4.png
-/* harmony default export */ const sya4 = ({"src":"/_next/static/media/sya4.019e4db9.png","height":172,"width":431,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAIAAAAhqtkfAAAARUlEQVR42gUAgQ2AIMj/r2ysVluZIwEVBFuqzEiC3Pr0WMsjhg6blja49uN8SwGA0oSm6uhqmmolYWHmnHOEm/n9EOL3AxQqRLLUQQ+JAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":3});
+/* harmony default export */ const sya4 = ({"src":"/web_portfolio/_next/static/media/sya4.019e4db9.png","height":172,"width":431,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAIAAAAhqtkfAAAARUlEQVR42gUAgQ2AIMj/r2ysVluZIwEVBFuqzEiC3Pr0WMsjhg6blja49uN8SwGA0oSm6uhqmmolYWHmnHOEm/n9EOL3AxQqRLLUQQ+JAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":3});
 ;// CONCATENATED MODULE: ./public/images/sya5.png
-/* harmony default export */ const sya5 = ({"src":"/_next/static/media/sya5.936f6ef5.png","height":251,"width":579,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAIAAAAhqtkfAAAASElEQVR42gVAQQqAIBD0/w/sUicjyBLStbVox50IcR9zxHYOp5vhVhZxYAQFzOwx5O+tIrVIOs7ee0iXTEtcUybp7q01VSX5Aw6dRKxGytXDAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":3});
+/* harmony default export */ const sya5 = ({"src":"/web_portfolio/_next/static/media/sya5.936f6ef5.png","height":251,"width":579,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAADCAIAAAAhqtkfAAAASElEQVR42gVAQQqAIBD0/w/sUicjyBLStbVox50IcR9zxHYOp5vhVhZxYAQFzOwx5O+tIrVIOs7ee0iXTEtcUybp7q01VSX5Aw6dRKxGytXDAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":3});
 ;// CONCATENATED MODULE: ./pages/conponents/SeeYouAgain.tsx
 
 
