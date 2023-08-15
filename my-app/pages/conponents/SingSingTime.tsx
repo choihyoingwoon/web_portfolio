@@ -7,11 +7,6 @@ import Image from "next/image";
 import singsingtime from "../../public/images/singsingtime.png";
 import js from "../../public/images/js.png";
 import vue from "../../public/images/vue.png";
-import dd1 from "../../public/images/dd1.png";
-import dd2 from "../../public/images/dd2.png";
-import dd3 from "../../public/images/dd3.png";
-import dd4 from "../../public/images/dd4.png";
-import dd5 from "../../public/images/dd5.png";
 
 const SingSingTime: React.FC = () => {
   const [ref, isInView] = useInView(0.8);

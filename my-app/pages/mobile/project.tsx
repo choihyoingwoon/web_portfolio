@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import seeyouagain from "@/public/images/seeyouagain.png";
-import devday from "@/public/images/devday.png";
-import singsingtime from "@/public/images/singsingtime.png";
-import pjt from "@/public/images/pjt.png";
+import seeyouagain from "../../public/images/seeyouagain.png";
+import devday from "../../public/images/devday.png";
+import singsingtime from "../../public/images/singsingtime.png";
+import pjt from "../../public/images/pjt.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

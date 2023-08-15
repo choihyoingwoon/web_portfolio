@@ -1,8 +1,8 @@
 import { motion, useCycle } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import computer from "@/public/images/hero-devices-mobile.png";
-import man from "@/public/images/me1.png";
+import computer from "../../../public/images/hero-devices-mobile.png";
+import man from "../../../public/images/me1.png";
 import "animate.css";
 import Header from "../../conponents/mobileHeader";
 

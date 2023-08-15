@@ -1,9 +1,9 @@
 import React from "react";
 
 import Image from "next/image";
-import pjt from "@/public/images/pjt.png";
-import js from "@/public/images/js.png";
-import vue from "@/public/images/vue.png";
+import pjt from "../../../public/images/pjt.png";
+import js from "../../../public/images/js.png";
+import vue from "../../../public/images/vue.png";
 
 const Pjt: React.FC = () => {
   return (

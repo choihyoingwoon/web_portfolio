@@ -3,10 +3,10 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { BiArrowBack } from "react-icons/bi";
 import Image from "next/image";
-import seeyouagain from "@/public/images/seeyouagain.png";
-import devday from "@/public/images/devday.png";
-import singsingtime from "@/public/images/singsingtime.png";
-import pjt from "@/public/images/pjt.png";
+import seeyouagain from "../public/images/seeyouagain.png";
+import devday from "../public/images/devday.png";
+import singsingtime from "../public/images/singsingtime.png";
+import pjt from "../public/images/pjt.png";
 
 const variants = {
   initial: { opacity: 0, y: 50 },
