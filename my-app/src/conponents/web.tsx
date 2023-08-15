@@ -1,8 +1,8 @@
 import { motion, useCycle } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import computer from "../../public/images/hero-devices.png";
-import man from "../../public/images/mf-avatar.svg";
+import computer from "@/public/images/hero-devices.png";
+import man from "@/public/images/mf-avatar.svg";
 import "animate.css";
 
 const variants = {

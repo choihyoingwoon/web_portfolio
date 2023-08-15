@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import seeyouagain from "../../public/images/seeyouagain.png";
-import devday from "../../public/images/devday.png";
-import singsingtime from "../../public/images/singsingtime.png";
-import pjt from "../../public/images/pjt.png";
+import seeyouagain from "@/public/images/seeyouagain.png";
+import devday from "@/public/images/devday.png";
+import singsingtime from "@/public/images/singsingtime.png";
+import pjt from "@/public/images/pjt.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Footer from "../conponents/naviBar";
+import Footer from "@/src/conponents/mobile/naviBar";
 import { useRouter } from "next/router";
 
 const variants = {

@@ -3,7 +3,7 @@ import "animate.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import computer from "../public/images/hero-devices.png";
+import computer from "@/public/images/hero-devices.png";
 import { BiArrowBack } from "react-icons/bi";
 
 const variants = {
