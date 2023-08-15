@@ -17,9 +17,9 @@ const Detail: React.FC = () => {
     SingSingTime: 2,
     PJT: 3,
   };
-  const handleSlideChange = (info: AwesomeSlider) => {
+  const handleSlideChange = (info: { currentIndex: number }) => {
     setNumber(info.currentIndex);
-    sessionStorage.setItem("see", info.currentIndex);
+    sessionStorage.setItem("see", String(info.currentIndex));
   };
   const projectClick = (project: number) => {
     console.log(project);
