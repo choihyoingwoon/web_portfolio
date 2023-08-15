@@ -11,7 +11,6 @@ import StarRating from "../conponents/starRating";
 import Footer from "../conponents/naviBar";
 
 const About: React.FC = () => {
-
   return (
     <div className="w-full bg-white text-black">
       <div className="p-8 pb-16">
@@ -46,7 +45,7 @@ const About: React.FC = () => {
           <div className="mt-8 text-[4vw] border-l-8 0 p-2">
             <p className="font-bold text-[#758772]">교육</p>
             <p className="mt-2 border-dashed border-b-4 pb-2">
-              삼성 청년 SW 아카데미 8기{" "}
+              삼성 청년 SW 아카데미 8기
               <span className="text-[3.5vw]">(2022.07~2023.06)</span>
             </p>
           </div>

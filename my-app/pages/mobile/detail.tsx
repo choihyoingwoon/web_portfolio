@@ -5,6 +5,7 @@ import DevDay from "./conponents/DevDay";
 import SingSingTime from "./conponents/SingSingTime";
 import PJT from "./conponents/PJT";
 import classNames from "classnames";
+import Footer from "../conponents/naviBar";
 
 const Detail: React.FC = () => {
   const [number, setNumber] = useState<number>(
@@ -28,7 +29,26 @@ const Detail: React.FC = () => {
 
   return (
     <div className="w-full text-black">
-      <div className="flex text-[1.5vw] bg-[#2f2f2f] text-white text-center px-8 h-fit pt-8">
+      <AwesomeSlider
+        className="h-[86vh]"
+        selected={number}
+        bullets={false}
+        onTransitionEnd={handleSlideChange}
+      >
+        <div className="w-[90%] h-full py-4">
+          <SeeYouAgain />
+        </div>
+        <div className="w-[90%] h-full py-4">
+          <DevDay />
+        </div>
+        <div className="w-[90%] h-full py-4">
+          <SingSingTime />
+        </div>
+        <div className="w-[90%] h-full py-4">
+          <PJT />
+        </div>
+      </AwesomeSlider>
+      <div className="flex text-[3vw] h-[7vh] bg-[#2f2f2f] text-white text-center px-4">
         <button
           onClick={() => projectClick(0)}
           className={classNames(
@@ -63,27 +83,11 @@ const Detail: React.FC = () => {
             number == 3 ? "text-[#5be9b9] font-semibold" : "text-white"
           )}
         >
-          SSAFY 관통프로젝트
+          SSAFY <br />
+          관통프로젝트
         </button>
       </div>
-      <AwesomeSlider
-        className="h-[85vh]"
-        selected={number}
-        onTransitionEnd={handleSlideChange}
-      >
-        <div className="w-[80%] h-full py-8">
-          <SeeYouAgain />
-        </div>
-        <div className="w-[80%] h-full py-8">
-          <DevDay />
-        </div>
-        <div className="w-[80%] h-full py-8">
-          <SingSingTime />
-        </div>
-        <div className="w-[80%] h-full py-8">
-          <PJT />
-        </div>
-      </AwesomeSlider>
+      <Footer />
     </div>
   );
 };

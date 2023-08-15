@@ -29,7 +29,7 @@ const Project: React.FC = () => {
   const router = useRouter();
   const goToDetail = (project: Number) => {
     sessionStorage.setItem("see", String(project));
-    router.push("/detail");
+    router.push("/mobile/detail");
   };
   return (
     <div className="relative w-full h-screen bg-[#7510F7] text-black">
