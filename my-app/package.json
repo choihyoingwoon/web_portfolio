@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "export": "next export",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@types/node": "20.4.4",
@@ -30,6 +31,7 @@
     "react-slick": "^0.29.0",
     "react-youtube": "^10.1.0",
     "sass": "^1.64.1",
+    "sharp": "^0.32.4",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
