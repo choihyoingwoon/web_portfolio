@@ -50,7 +50,7 @@ const DevDay: React.FC = () => {
   }, [isInViewTwo]);
   const originalUrl = "https://hyoingwoon.vercel.app/";
   const encodedUrl = encodeURIComponent(originalUrl);
-  const url = `https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1&enablejsapi=1&origin=${encodedUrl}%3A3000&widgetid=7`;
+  const url = `https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1&enablejsapi=1&origin=${encodedUrl}&widgetid=7`;
   return (
     <>
       <div
