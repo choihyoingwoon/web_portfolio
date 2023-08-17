@@ -81,8 +81,8 @@ const DevDay: React.FC = () => {
           <Image src={dd3} alt="dd3" className="w-1/3 p-[2vw]" />
         </span>
         <div className=" mb-4">
-          <p className="text-[1.5vw] font-semibold">느끼고 배운 점</p>
-          <div className="text-[1.2vw] break-keep	">
+          <p className="text-[3vw] font-semibold">느끼고 배운 점</p>
+          <div className="text-[3vw] break-keep	">
             1) 목업를 재사용을 생각하면서 만들었었는데 효율이 상당히 높았습니다.
             기획의 중요성을 알게 되었습니다.
             <br />

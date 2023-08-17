@@ -67,8 +67,8 @@ const SingSingTime: React.FC = () => {
           <p>2. 노래 플레이 룸 구현</p>
         </div>
         <div className=" mb-4">
-          <p className="text-[1.5vw] font-semibold">느끼고 배운 점</p>
-          <div className="text-[1.2vw] break-keep	">
+          <p className="text-[3vw] font-semibold">느끼고 배운 점</p>
+          <div className="text-[3vw] break-keep	">
             1. session 통신을 이용해 해당 페이지를 보고 있는 사용자에게 동일한
             작동을 요청 보내는 것을 알게 되었습니다.
             <br />

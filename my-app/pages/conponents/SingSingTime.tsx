@@ -10,6 +10,7 @@ import vue from "../../public/images/vue.png";
 
 const SingSingTime: React.FC = () => {
   const [ref, isInView] = useInView(0.8);
+  const [refTwo, isInViewTwo] = useInView(0);
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
   useEffect(() => {
     if (iframeRef.current) {
@@ -28,6 +29,17 @@ const SingSingTime: React.FC = () => {
       }
     }
   }, [isInView]);
+  useEffect(() => {
+    if (iframeRef.current) {
+      if (isInViewTwo) {
+        // If the iframe is in view, play the video
+        iframeRef.current.contentWindow?.postMessage(
+          '{"event":"command","func":"pauseVideo","args":""}',
+          "*"
+        );
+      }
+    }
+  }, [isInViewTwo]);
   return (
     <>
       <div
@@ -46,6 +58,7 @@ const SingSingTime: React.FC = () => {
           ref={(el) => {
             iframeRef.current = el;
             ref(el);
+            refTwo(el);
           }}
         />
         <div className="bg-white w-[80%] m-auto pb-16">

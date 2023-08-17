@@ -35,8 +35,8 @@ const Pjt: React.FC = () => {
           <p className="mr-6 font-semibold">담당역할 / FrontEnd</p>
         </div>
         <div className=" mb-4">
-          <p className="text-[1.5vw] font-semibold">느끼고 배운 점</p>
-          <div className="text-[1.2vw] break-keep	">
+          <p className="text-[3vw] font-semibold">느끼고 배운 점</p>
+          <div className="text-[3vw] break-keep	">
             1. 사용자의 입장에서 편한 서비스를 만드는건 많은 디테일적 요소가
             가미되어야 한다는 것을 알게 되었습니다. 그리고 포기하지 않는다면
             유의미한 결과물을 만들 수 있다는 것을 알게 되었습니다.

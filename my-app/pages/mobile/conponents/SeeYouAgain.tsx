@@ -84,7 +84,7 @@ const SeeYouAgain: React.FC = () => {
           <Image src={sya3} alt="sya3" className="w-1/3 p-[2vw]" />
         </span>
         <div className=" mb-4">
-          <p className="text-[1.5vw] font-semibold">느끼고 배운 점</p>
+          <p className="text-[3vw] font-semibold">느끼고 배운 점</p>
           <div className="text-[3vw] break-keep	">
             1) 계획의 중요성을 알게 되었습니다. 주어진 기간에 맞게 계획을 잘
             세우고 일정 관리를 잘 해야 결과물이 안정적으로 나온다고 느꼈습니다.
