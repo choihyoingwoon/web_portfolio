@@ -28,7 +28,7 @@ const Contents: React.FC = () => {
     }, 500);
   };
   const goToBack = () => {
-    router.back();
+    router.push("/");
   };
 
   return (
