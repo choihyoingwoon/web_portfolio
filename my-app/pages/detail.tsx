@@ -4,9 +4,12 @@ import SeeYouAgain from "./conponents/SeeYouAgain";
 import DevDay from "./conponents/DevDay";
 import SingSingTime from "./conponents/SingSingTime";
 import PJT from "./conponents/PJT";
+import { useRouter } from "next/navigation";
 import classNames from "classnames";
+import { BiArrowBack } from "react-icons/bi";
 
 const Detail: React.FC = () => {
+  const router = useRouter();
   const [number, setNumber] = useState<number>(
     typeof window !== "undefined"
       ? parseInt(sessionStorage.getItem("see") || "0")
@@ -27,10 +30,20 @@ const Detail: React.FC = () => {
     sessionStorage.setItem("see", String(project));
     setNumber(project);
   };
+  const goToBack = () => {
+    router.push("/contents");
+  };
 
   return (
-    <div className="w-full text-black">
-      <div className="flex text-[1.5vw] bg-[#2f2f2f] text-white text-center px-8 h-fit pt-8">
+    <div className="relative w-full text-black">
+      <div
+        onClick={() => goToBack()}
+        className="absolute left-10 top-[3vh] flex items-center text-[1vw] cursor-pointer text-white"
+      >
+        <BiArrowBack size={30} />
+        <p className="ml-2">back</p>
+      </div>
+      <div className="flex text-[1.2vw] bg-[#2f2f2f] text-white text-center px-8 h-[10vh] py-2">
         <button
           onClick={() => projectClick(0)}
           className={classNames(
@@ -73,16 +86,16 @@ const Detail: React.FC = () => {
         selected={number}
         onTransitionEnd={handleSlideChange}
       >
-        <div className="w-[80%] h-full py-8">
+        <div className="w-[80%] h-full pb-4">
           <SeeYouAgain />
         </div>
-        <div className="w-[80%] h-full py-8">
+        <div className="w-[80%] h-full pb-4">
           <DevDay />
         </div>
-        <div className="w-[80%] h-full py-8">
+        <div className="w-[80%] h-full pb-4">
           <SingSingTime />
         </div>
-        <div className="w-[80%] h-full py-8">
+        <div className="w-[80%] h-full pb-4">
           <PJT />
         </div>
       </AwesomeSlider>
