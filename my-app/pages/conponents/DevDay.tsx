@@ -28,10 +28,10 @@ const DevDay: React.FC = () => {
         );
       } else {
         // If the iframe is out of view, pause the video
-          iframeRef.current.contentWindow?.postMessage(
-            '{"event":"command","func":"pauseVideo","args":""}',
-            "*"
-          );
+        iframeRef.current.contentWindow?.postMessage(
+          '{"event":"command","func":"pauseVideo","args":""}',
+          "*"
+        );
       }
     }
   }, [isInView]);
@@ -48,7 +48,11 @@ const DevDay: React.FC = () => {
   }, [isInViewTwo]);
   const originalUrl = "https://hyoingwoon.vercel.app/";
   const encodedUrl = encodeURIComponent(originalUrl);
-  const url = `https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&${isInView&&"end='0'"}`;
+  const url = `https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1${
+    isInView && "autoplay=1"
+  }&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&${
+    isInView && "end='0'"
+  }`;
   return (
     <>
       <div
