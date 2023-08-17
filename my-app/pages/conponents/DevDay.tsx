@@ -26,10 +26,8 @@ const DevDay: React.FC = () => {
           '{"event":"command","func":"playVideo","args":""}',
           "*"
         );
-        console.log(iframeRef.current.contentWindow);
       } else {
         // If the iframe is out of view, pause the video
-        console.log(iframeRef.current.contentWindow),
           iframeRef.current.contentWindow?.postMessage(
             '{"event":"command","func":"pauseVideo","args":""}',
             "*"
@@ -50,7 +48,7 @@ const DevDay: React.FC = () => {
   }, [isInViewTwo]);
   const originalUrl = "https://hyoingwoon.vercel.app/";
   const encodedUrl = encodeURIComponent(originalUrl);
-  const url = `https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer`;
+  const url = `https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&${isInView&&"end='0'"}`;
   return (
     <>
       <div
@@ -60,6 +58,7 @@ const DevDay: React.FC = () => {
         )}
       >
         <iframe
+          id="player"
           src={url}
           className={classNames(
             "w-full h-full m-auto mb-4",
