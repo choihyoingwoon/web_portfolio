@@ -47,40 +47,11 @@ const SeeYouAgain: React.FC = () => {
     }
   `;
   const [ref, isInView] = useInView(0.8);
-  const [refTwo, isInViewTwo] = useInView(0);
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
-  useEffect(() => {
-    if (iframeRef.current) {
-      if (isInView) {
-        // If the iframe is in view, play the video
-        iframeRef.current.contentWindow?.postMessage(
-          '{"event":"command","func":"playVideo","args":""}',
-          "*"
-        );
-      } else {
-        // If the iframe is out of view, pause the video
-        iframeRef.current.contentWindow?.postMessage(
-          '{"event":"command","func":"pauseVideo","args":""}',
-          "*"
-        );
-      }
-    }
-  }, [isInView]);
-  useEffect(() => {
-    if (iframeRef.current) {
-      if (isInViewTwo) {
-        // If the iframe is in view, play the video
-        iframeRef.current.contentWindow?.postMessage(
-          '{"event":"command","func":"pauseVideo","args":""}',
-          "*"
-        );
-      }
-    }
-  }, [isInViewTwo]);
 
   const originalUrl = "https://hyoingwoon.vercel.app/";
   const encodedUrl = encodeURIComponent(originalUrl);
-  const url = `https://www.youtube.com/embed/QRYlVUjQ0Xk?${
+  const url = `https://www.youtube.com/embed/QRYlVUjQ0Xk?autoplay=1${
     isInView && "autoplay=1"
   }&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&${
     isInView && "end='0'"
@@ -104,7 +75,6 @@ const SeeYouAgain: React.FC = () => {
           ref={(el) => {
             iframeRef.current = el;
             ref(el);
-            refTwo(el);
           }}
         />
         <div className="bg-white w-[80%] m-auto pb-16">

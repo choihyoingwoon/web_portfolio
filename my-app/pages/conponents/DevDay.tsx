@@ -19,7 +19,7 @@ const DevDay: React.FC = () => {
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
   const originalUrl = "https://hyoingwoon.vercel.app/";
   const encodedUrl = encodeURIComponent(originalUrl);
-  const url = `https://www.youtube.com/embed/xvINlpCsLYA?${
+  const url = `https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1${
     isInView && "autoplay=1"
   }&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&${
     isInView && "end='0'"
