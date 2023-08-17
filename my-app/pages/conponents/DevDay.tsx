@@ -22,16 +22,18 @@ const DevDay: React.FC = () => {
     if (iframeRef.current) {
       if (isInView) {
         // If the iframe is in view, play the video
-        iframeRef.current.contentWindow?.postMessage(
-          '{"event":"command","func":"playVideo","args":""}',
-          "*"
-        );
+        console.log(iframeRef.current.contentWindow),
+          iframeRef.current.contentWindow?.postMessage(
+            '{"event":"command","func":"playVideo","args":""}',
+            "*"
+          );
       } else {
         // If the iframe is out of view, pause the video
-        iframeRef.current.contentWindow?.postMessage(
-          '{"event":"command","func":"pauseVideo","args":""}',
-          "*"
-        );
+        console.log(iframeRef.current.contentWindow),
+          iframeRef.current.contentWindow?.postMessage(
+            '{"event":"command","func":"pauseVideo","args":""}',
+            "*"
+          );
       }
     }
   }, [isInView]);
