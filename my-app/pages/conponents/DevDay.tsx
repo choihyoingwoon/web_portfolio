@@ -57,7 +57,7 @@ const DevDay: React.FC = () => {
         )}
       >
         <iframe
-          src="https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1&enablejsapi=1&origin=http%3A%2F%2Flocalhost%3A3000&widgetid=7&origin=https://https://hyoingwoon.vercel.app"
+          src="https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1&enablejsapi=1&origin=http%3A%2F%2Flocalhost%3A3000&widgetid=7?enablejsapi=1&version=3&playerapiid=ytplayer"
           className={classNames(
             "w-full h-full m-auto mb-4",
             styles.fadeUp,
