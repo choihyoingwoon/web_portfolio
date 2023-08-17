@@ -40,6 +40,11 @@ const SingSingTime: React.FC = () => {
       }
     }
   }, [isInViewTwo]);
+  const originalUrl = "https://hyoingwoon.vercel.app/";
+  const encodedUrl = encodeURIComponent(originalUrl);
+  const url = `https://www.youtube.com/embed/FptdSMkUkKE?autoplay=1${
+    isInView && "autoplay=1"
+  }&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&`;
   return (
     <>
       <div
@@ -49,7 +54,7 @@ const SingSingTime: React.FC = () => {
         )}
       >
         <iframe
-          src="https://www.youtube.com/embed/FptdSMkUkKE?autoplay=1&enablejsapi=1&origin=http%3A%2F%2Flocalhost%3A3000&widgetid=3"
+          src={url}
           className={classNames(
             "w-full h-full m-auto mb-4",
             styles.fadeUp,

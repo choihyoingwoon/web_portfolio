@@ -78,6 +78,12 @@ const SeeYouAgain: React.FC = () => {
     }
   }, [isInViewTwo]);
 
+  const originalUrl = "https://hyoingwoon.vercel.app/";
+  const encodedUrl = encodeURIComponent(originalUrl);
+  const url = `https://www.youtube.com/embed/QRYlVUjQ0Xk?${
+    isInView && "autoplay=1"
+  }&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&`;
+
   return (
     <>
       <div
@@ -87,7 +93,7 @@ const SeeYouAgain: React.FC = () => {
         )}
       >
         <iframe
-          src="https://www.youtube.com/embed/QRYlVUjQ0Xk?autoplay=1&enablejsapi=1&origin=http%3A%2F%2Flocalhost%3A3000&widgetid=7"
+          src={url}
           className={classNames(
             "w-full h-full m-auto mb-4",
             styles.fadeUp,
