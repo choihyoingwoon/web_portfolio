@@ -17,12 +17,11 @@ import dd5 from "../../public/images/dd5.png";
 const DevDay: React.FC = () => {
   const [ref, isInView] = useInView(0.8);
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
-
   const originalUrl = "https://hyoingwoon.vercel.app/";
   const encodedUrl = encodeURIComponent(originalUrl);
-  const url = `https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1${
-    isInView && "autoplay=1"
-  }&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&`;
+  const url = `https://www.youtube.com/embed/xvINlpCsLYA?autoplay=1&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&${
+    isInView && "end='0'"
+  }`;
   return (
     <>
       <div
