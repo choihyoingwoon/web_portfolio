@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import classNames from "classnames";
 import { BiArrowBack } from "react-icons/bi";
 
+
 const Detail: React.FC = () => {
   const router = useRouter();
   const [number, setNumber] = useState<number>(
