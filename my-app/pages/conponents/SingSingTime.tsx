@@ -42,7 +42,7 @@ const SingSingTime: React.FC = () => {
   }, [isInViewTwo]);
   const originalUrl = "https://hyoingwoon.vercel.app/";
   const encodedUrl = encodeURIComponent(originalUrl);
-  const url = `https://www.youtube.com/embed/FptdSMkUkKE?autoplay=1${
+  const url = `https://www.youtube.com/embed/FptdSMkUkKE?${
     isInView && "autoplay=1"
   }&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&${
     isInView && "end='0'"

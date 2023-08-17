@@ -80,7 +80,7 @@ const SeeYouAgain: React.FC = () => {
 
   const originalUrl = "https://hyoingwoon.vercel.app/";
   const encodedUrl = encodeURIComponent(originalUrl);
-  const url = `https://www.youtube.com/embed/QRYlVUjQ0Xk?autoplay=1${
+  const url = `https://www.youtube.com/embed/QRYlVUjQ0Xk?${
     isInView && "autoplay=1"
   }&enablejsapi=1&origin=${encodedUrl}&widgetid=7&playerapiid=ytplayer&${
     isInView && "end='0'"
