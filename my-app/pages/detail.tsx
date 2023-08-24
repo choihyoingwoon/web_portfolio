@@ -36,7 +36,7 @@ const Detail: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full text-black">
+    <div className="relative w-full text-black font-['Pretendard-Regular']">
       <div
         onClick={() => goToBack()}
         className="absolute left-10 top-[3vh] flex items-center text-[1vw] cursor-pointer text-white"

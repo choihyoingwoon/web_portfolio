@@ -32,19 +32,19 @@ const Contents: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-screen bg-[#7510F7] px-[10rem] text-[6vw] overflow-x-hidden overflow-y-hidden">
+    <div className="w-full h-screen bg-[#7510F7] px-[10rem] text-[6vw] overflow-x-hidden overflow-y-hidden font-['Pretendard-Bold']">
       <motion.button
         initial="initial"
         animate="animate"
         variants={variants}
         transition={{ duration: 1 }}
-        className="absolute left-10 top-[3vh] flex items-center text-[1vw] text-white font-bold"
+        className="absolute left-10 top-[3vh] flex items-center text-[1vw] text-white"
         onClick={goToBack}
       >
         <BiArrowBack size={30} />
         <p className="ml-2">back</p>
       </motion.button>
-      <div className="absolute top-[20%] font-bold text-white">
+      <div className="absolute top-[20%] text-white">
         <motion.button
           whileHover={{ scale: 1.1, color: "blue" }}
           initial="initial"

@@ -12,7 +12,7 @@ import Footer from "../conponents/naviBar";
 
 const About: React.FC = () => {
   return (
-    <div className="w-full bg-white text-black">
+    <div className="font-['Pretendard-Regular'] w-full bg-white text-black">
       <div className="p-8 pb-16">
         <Image src={me} alt="me" className="rounded-full mb-4 w-1/2 m-auto" />
         <div className="animate__animated animate__fadeIn">

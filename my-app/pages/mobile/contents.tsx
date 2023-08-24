@@ -33,7 +33,7 @@ const Contents: React.FC = () => {
 
   return (
     <>
-      <div className="w-full h-screen bg-[#7510F7] text-[10vw] overflow-x-hidden overflow-y-hidden">
+      <div className="font-['Pretendard-Regular'] w-full h-screen bg-[#7510F7] text-[10vw] overflow-x-hidden overflow-y-hidden">
         <div className="mt-[20vh] font-bold text-white z-50 px-[10vw]">
           <motion.div
             whileHover={{ scale: 1.1, color: "blue" }}

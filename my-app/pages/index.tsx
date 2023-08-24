@@ -5,7 +5,11 @@ import Mobile from "../pages/conponents/mobile";
 const HomePage: React.FC = () => {
   const { width } = useWindowSize();
   const isMobile = width && width <= 768;
-  return <div>{isMobile ? <Mobile /> : <Web />}</div>;
+  return (
+    <div className="font-['Pretendard-Regular']">
+      {isMobile ? <Mobile /> : <Web />}
+    </div>
+  );
 };
 
 export default HomePage;

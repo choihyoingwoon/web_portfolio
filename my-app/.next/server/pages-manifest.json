@@ -2,9 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/contents": "pages/contents.js",
   "/project": "pages/project.js",
-  "/detail": "pages/detail.js",
   "/": "pages/index.js",
-  "/about": "pages/about.js",
-  "/contents": "pages/contents.js"
+  "/mobile/contents": "pages/mobile/contents.js",
+  "/mobile/about": "pages/mobile/about.js"
 }

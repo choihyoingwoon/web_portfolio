@@ -47,7 +47,7 @@ const Project: React.FC = () => {
     }
   };
   return (
-    <div className="w-full h-screen bg-[#7510F7] text-black">
+    <div className="w-full h-screen bg-[#7510F7] text-black font-['Pretendard-Regular']">
       <motion.button
         initial="initial"
         animate="animate"

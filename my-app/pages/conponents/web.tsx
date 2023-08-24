@@ -2,7 +2,7 @@ import { motion, useCycle } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import computer from "../../public/images/hero-devices.png";
-import man from "../../public/images/mf-avatar.svg";
+import man from "../../public/images/me1.png";
 import "animate.css";
 
 const variants = {
@@ -26,7 +26,7 @@ const Web: React.FC = () => {
         animate="animate"
         variants={variants}
         transition={{ duration: 1 }}
-        className="text-center text-[2.5vw] font-bold"
+        className="text-center text-[2.5vw]"
       >
         Frontend Developer
       </motion.div>
@@ -90,9 +90,9 @@ const Web: React.FC = () => {
                   alt="man"
                   width={150}
                   height={100}
-                  className="m-auto animate__animated animate__bounce animate__delay-3s animate__slow animate__infinite"
+                  className="cursor-pointer w-full h-full m-auto animate__animated animate__bounce animate__delay-3s animate__slow animate__infinite rounded-full"
                 />
-                <div className="text-4xl text-red-500 font-bold absolute bottom-10 w-full text-center">
+                <div className="cursor-pointer text-4xl text-red-500 font-bold absolute bottom-10 w-full text-center">
                   Click
                 </div>
               </>

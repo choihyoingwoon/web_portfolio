@@ -22,7 +22,7 @@ const About: React.FC = () => {
   };
   const [isClicked, toggleClicked] = useCycle(false, true);
   return (
-    <div className="overflow-x-hidden overflow-y-hidden text-black">
+    <div className="overflow-x-hidden overflow-y-hidden text-black font-['Pretendard-Regular']">
       <motion.div
         initial={{
           scale: 1,

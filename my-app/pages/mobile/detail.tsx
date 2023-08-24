@@ -30,7 +30,7 @@ const Detail: React.FC = () => {
   };
 
   return (
-    <div className="w-full text-black">
+    <div className="w-full text-black font-['Pretendard-Regular']">
       <AwesomeSlider
         className="h-[86vh]"
         selected={number}

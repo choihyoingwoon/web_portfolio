@@ -27,20 +27,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/about": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/about.js"
-    ],
     "/contents": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/contents.js"
     ],
-    "/detail": [
+    "/mobile/about": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/detail.js"
+      "static/chunks/pages/mobile/about.js"
+    ],
+    "/mobile/contents": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/mobile/contents.js"
     ],
     "/project": [
       "static/chunks/webpack.js",

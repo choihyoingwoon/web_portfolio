@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("./woff/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("./woff/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  src: url("./woff/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "English";
+  src: url("./woff/OpenSans-Medium.ttf") format("ttf");
+}

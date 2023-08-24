@@ -32,7 +32,7 @@ const Project: React.FC = () => {
     router.push("/mobile/detail");
   };
   return (
-    <div className="relative w-full h-screen bg-[#7510F7] text-black">
+    <div className="font-['Pretendard-Regular'] relative w-full h-screen bg-[#7510F7] text-black">
       <motion.p
         initial="initial"
         animate="animate"
@@ -99,7 +99,7 @@ const Project: React.FC = () => {
                 <p className="font-bold text-[6vw]">SingSingTime</p>
                 <p>2023.01.09 ~ 2023.02.17</p>
                 <p className="text-[3vw] font-semibold break-keep">
-                  WebRTC를 이용한 온라인 노래 경연 프로그램 입니다.
+                  WebRTC(openvidu)를 이용한 온라인 노래 경연 프로그램
                 </p>
               </div>
               {/*              <button className="absolute -translate-x-1/2 left-1/2 bottom-4 rounded-lg w-2/3 m-auto h-8 text-[4vw] font-semibold shadow-md shadow-[#7510F7]/80">
@@ -114,7 +114,7 @@ const Project: React.FC = () => {
                 <p className="font-bold text-[6vw]">SSAFY 관통 프로젝트</p>
                 <p>2022.11.16 ~ 2022.11.25</p>
                 <p className="text-[3vw] font-semibold break-keep">
-                  OpenApi를 활용해서 영화추천서비스를 제공하는 프로젝트 입니다.
+                  OpenApi를 활용해서 영화추천서비스를 제공하는 프로젝트
                 </p>
               </div>
               {/*              <button className="absolute -translate-x-1/2 left-1/2 bottom-4 rounded-lg w-2/3 m-auto h-8 text-[4vw] font-semibold shadow-md shadow-[#7510F7]/80">
